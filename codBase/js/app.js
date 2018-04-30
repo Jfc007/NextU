@@ -18,22 +18,22 @@ var Calculadora={
     var seleccion=event.currentTarget.id;
     switch (seleccion) {
       case 'on':
-        document.getElementById('on').style="width:21.95%;height:62.10px";
+        document.getElementById('on').style="width:22%;height:61.00px";
         break;
         case 'sign':
-          document.getElementById('sign').style="width:21.85%;height:62.10px";
+          document.getElementById('sign').style="width:21.98%;height:61.00px";
           break;
           case 'dividido':
-              document.getElementById('dividido').style="width:21.85%;height:62.10px";
+              document.getElementById('dividido').style="width:22%;height:61.00px";
             break;
             case 'raiz':
-                document.getElementById('raiz').style="width:21.85%;height:62.10px";
+                document.getElementById('raiz').style="width:21.98%;height:61.00px";
               break;
               case 'por':
                   document.getElementById('por').style="width:21.85%;height:62.10px";
                 break;
                 case 'menos':
-                    document.getElementById('menos').style="width:21.85%;height:62.10px";
+                    document.getElementById('menos').style="width:22%;height:61.00px";
                   break;
                   case 'punto':
                       document.getElementById('punto').style="width:28.75%;height:62.10px";
@@ -54,13 +54,13 @@ var Calculadora={
                                 document.getElementById('3').style="width:28.75%;height:62.10px";
                               break;
                               case '4':
-                                  document.getElementById('4').style="width:21.90%;height:62.10px";
+                                  document.getElementById('4').style="width:22%;height:61.00px";
                                 break;
                                 case '5':
-                                    document.getElementById('5').style="width:21.75%;height:62.10px";
+                                    document.getElementById('5').style="width:21.95%;height:61.00px";
                                   break;
                                   case '6':
-                                      document.getElementById('6').style="width:21.75%;height:62.10px";
+                                      document.getElementById('6').style="width:21.95%;height:61.00px";
                                     break;
                                     case '7':
                                         document.getElementById('7').style="21.90%;height:62.10px";
@@ -285,7 +285,7 @@ var Calculadora={
         }
       }
     }else{
-        // validar si la operacion solicitada esta vacia
+        // validar si la operacion solicitada esta vacia para ejecutar ultima operacion
       if (tipoOP=='' && nume2==0){
         if (antOP=='mas'){
           Calculadora.Sumar(nume1,antNume2);
