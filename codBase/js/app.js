@@ -33,7 +33,7 @@ var Calculadora={
                   document.getElementById('por').style="width:21.85%;height:62.10px";
                 break;
                 case 'menos':
-                    document.getElementById('menos').style="width:21.75%;height:62.10px";
+                    document.getElementById('menos').style="width:21.85%;height:62.10px";
                   break;
                   case 'punto':
                       document.getElementById('punto').style="width:28.75%;height:62.10px";
@@ -45,7 +45,7 @@ var Calculadora={
                           document.getElementById('mas').style="width:89.5%;height:99.95%";
                         break;
                         case '1':
-                            document.getElementById('1').style="width:28.75%;height:62.10px";
+                            document.getElementById('1').style="width:28.85%;height:62.10px";
                           break;
                           case '2':
                               document.getElementById('2').style="width:28.75%;height:62.10px";
@@ -54,10 +54,10 @@ var Calculadora={
                                 document.getElementById('3').style="width:28.75%;height:62.10px";
                               break;
                               case '4':
-                                  document.getElementById('4').style="width:21.95%;height:62.10px";
+                                  document.getElementById('4').style="width:21.90%;height:62.10px";
                                 break;
                                 case '5':
-                                    document.getElementById('5').style="width:21.90%;height:62.10px";
+                                    document.getElementById('5').style="width:21.75%;height:62.10px";
                                   break;
                                   case '6':
                                       document.getElementById('6').style="width:21.75%;height:62.10px";
