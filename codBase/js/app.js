@@ -77,7 +77,31 @@ var Calculadora={
 
           default:
     }
-    //llamada a funciones
+    //llamar a funciones para el control de operaciones e ingreso de numeros y signos
+    if (seleccion>=0 && seleccion<=9){
+      Calculadora.insertaValores(seleccion);
+    }else{
+      //Calculadora.limpiaCal();
+      if (seleccion=='on'){
+          Calculadora.limpiaCal();
+      }else{
+        if (seleccion=='punto'){
+          Calculadora.controlPunto();
+        }else {
+          if (seleccion=='sign'){
+            Calculadora.ControlSigno();
+          }else{
+            if (seleccion=='mas'||seleccion=='menos'||seleccion=='por'||seleccion=='dividido'){
+              Calculadora.identificaOp(seleccion);
+            }else{
+              if (seleccion=='igual'){
+                Calculadora.Resultado();
+              }
+            }
+          }
+        }
+      }
+    }
   },
   cambiaTamO: function(event){
     //document.getElementsByClassName('tecla')[3].style="width:22%;height:62.91px"
