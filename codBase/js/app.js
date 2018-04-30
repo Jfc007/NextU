@@ -78,24 +78,25 @@ var Calculadora={
           default:
     }
     //llamar a funciones para el control de operaciones e ingreso de numeros y signos
+    //Calculadora.insertaValores(seleccion);
     if (seleccion>=0 && seleccion<=9){
-      Calculadora.insertaValores(seleccion);
+      document.getElementById(seleccion).addEventListener("click",Calculadora.insertaValores(seleccion));
     }else{
       //Calculadora.limpiaCal();
       if (seleccion=='on'){
-          Calculadora.limpiaCal();
+          document.getElementById(seleccion).addEventListener("click",Calculadora.limpiaCal());
       }else{
         if (seleccion=='punto'){
-          Calculadora.controlPunto();
+          document.getElementById(seleccion).addEventListener("click",Calculadora.controlPunto());
         }else {
           if (seleccion=='sign'){
-            Calculadora.ControlSigno();
+            document.getElementById(seleccion).addEventListener("click",Calculadora.ControlSigno());
           }else{
             if (seleccion=='mas'||seleccion=='menos'||seleccion=='por'||seleccion=='dividido'){
-              Calculadora.identificaOp(seleccion);
+              document.getElementById(seleccion).addEventListener("click",Calculadora.identificaOp(seleccion));
             }else{
               if (seleccion=='igual'){
-                Calculadora.Resultado();
+                document.getElementById(seleccion).addEventListener("click",Calculadora.Resultado());
               }
             }
           }
@@ -388,13 +389,3 @@ document.getElementById('7').onmouseup=Calculadora.cambiaTamO;
 document.getElementById('8').onmouseup=Calculadora.cambiaTamO;
 document.getElementById('9').onmouseup=Calculadora.cambiaTamO;
 document.getElementById('0').onmouseup=Calculadora.cambiaTamO;
-//document.getElementById('on').onmousedown=Calculadora.cambiaTamP;
-//document.getElementById('on').onmouseup=Calculadora.cambiaTamO;
-//document.getElementById("sign").onmousedown=Calculadora.cambiaTamP;
-//document.getElementById('dividido').onmousedown=Calculadora.cambiaTamP;
-//document.getElementById('raiz').onmousedown=Calculadora.cambiaTamP;
-
-//document.getElementById('signo').onmouseup=Calculadora.cambiaTamO;
-
-//document.getElementsByClassName('body').onload=Calculadora.inicializaDat
-//document.getElementsByClassName('tecla')[0].onClick=Calculadora.cambiaTamP();
